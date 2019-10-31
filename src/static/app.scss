@@ -1,0 +1,52 @@
+.container {
+    padding: 1rem;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+        margin-bottom: 0;
+        
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #ececec;
+
+            small {
+                opacity: 1;
+                cursor: pointer;
+                font-size: 1.5rem;
+            }
+            
+            .clear {
+                cursor: pointer;
+                padding: .4rem;
+            }
+
+            .clear:hover {
+                background-color: #ececec;
+            }
+        }
+
+        li:last-child {
+            border: 0
+        }
+
+        .done {
+            text-decoration: line-through;
+        }
+    }
+
+    input {
+        margin: 0;
+    }
+
+    input:focus {
+        border: 1px solid #b8b8b8;
+    }
+
+    small {
+        opacity: .6;
+    }
+}
