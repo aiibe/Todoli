@@ -9,7 +9,7 @@ export default (props) => {
     }
 
     function handleKeyPress(event){
-        if(event.key === 'Enter'){
+        if(event.key === 'Enter' && text !== ''){
             props.onAdd({
                 id: randShortString(),
                 content: text,
